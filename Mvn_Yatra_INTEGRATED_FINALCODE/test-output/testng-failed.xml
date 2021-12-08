@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.yatra.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.booking.test.OneWayTripTest">
+        <methods>
+          <include name="OneWayTripSearchTest" invocation-numbers="20 29 45 61 101 122 124 126 127 128 129 130 133 134 135 138 139"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.booking.test.OneWayTripTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
